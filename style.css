@@ -10,6 +10,29 @@ body {
 h1 {
     margin-top: 20px;
 }
+#cover-image {
+    width: 40%;
+    margin: 20px auto;
+    position: relative;
+}
+
+    #cover-image img {
+        width: 100%;
+        border: 3px solid #fff;
+        border-radius: 10px;
+    }
+
+.clickable-section {
+    position: absolute;
+    cursor: pointer;
+}
+
+.section0 {
+    top: 90%;
+    left: 30%;
+    width: 10%;
+    height: 15%;
+}
 
 #main-image {
     width: 80%;
@@ -29,14 +52,14 @@ h1 {
 }
 
 .section1 {
-    top: 15%;
+    top: 25%;
     left: 15%;
     width: 25%;
     height: 15%;
 }
 
 .section2 {
-    top: 15%;
+    top: 25%;
     left: 60%;
     width: 25%;
     height: 15%;
@@ -50,7 +73,7 @@ h1 {
 }
 
 .section4 {
-    top: 60%;
+    top: 50%;
     left: 60%;
     width: 25%;
     height: 15%;
@@ -74,7 +97,7 @@ h1 {
 
 #arrow-overlay {
     position: absolute;
-    left: 40%;
+    left: 42%;
     transform: translate(-50%, -50%);
     top: 55%;
     z-index: 1;
@@ -87,18 +110,28 @@ h1 {
     height: 100%;
 }
 
-.destiny-message {
+#yoda-image img {
+    width: 200px; /* Set the width of Yoda's image */
+    height: auto; /* Maintain the aspect ratio */
+    transform: scaleX(-1); /* Flip the image horizontally */
+}
+
+#yoda-image {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+    top: calc(30% + 140px); /* Position Yoda below the message */
+    left: 92%;
     z-index: 10;
 }
+.destiny-message {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 82%;
+    width: 500px;
+    z-index: 10;
+}
+
 
 button {
     position: fixed;

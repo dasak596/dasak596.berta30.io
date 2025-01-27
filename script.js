@@ -12,61 +12,65 @@ const citiesBySection = {
 // Predefined angles for each city
 const cityAngles = {
     "tourist-concentrators": {
-        "New York": 20,
-        "Kuala Lumpur": 45,
-        "Barcelona": 125,
-        "Miami": 150,
-        "La Meca": 180,
+        "New York": 15,
+        "Kuala Lumpur": 35,
+        "Barcelona": 135,
+        "Miami": 160,
+        "La Meca": 190,
         "Hong Kong": 215,
         "Pekin": 260,
         "Los Angeles": 315,
-        "Tokyo": 340,
-        "Sydney": 0
+        "Tokyo": 335,
+        "Sydney": 355
     },
     "cultural-tourism": {
-        "Germany": 350,
-        "Cyprus": 30,
+        "Germany": 345,
+        "Cyprus": 5,
         "Holland": 100,
-        "Morocco": 125,
-        "Turkey": 160,
-        "Austria": 190,
-        "Czech Republic": 220,
-        "Baltic states": 260,
+        "Morocco": 135,
+        "Turkey": 155,
+        "Austria": 175,
+        "Czech Republic": 195,
+        "Baltic states": 235,
         "Croatia": 285,
         "Greece": 300,
         "Italy": 325
     },
     "third-world": {
-        "Rwanda": 350,
-        "Cambodja": 30,
-        "Mexico": 100,
-        "Tunisia": 125,
-        "Argentina": 170,
-        "Indonesia": 220,
-        "Brasil": 260,
-        "Birmania": 285,
-        "Kenya": 300,
-        "South Africa": 325
+        "Rwanda": 315,
+        "Cambodja": 335,
+        "Mexico": 80,
+        "Tunisia": 100,
+        "Argentina": 130,
+        "Indonesia": 160,
+        "Brasil": 210,
+        "Birmania": 253,
+        "Kenya": 275,
+        "South Africa": 293
     },
     "trip-suppliers": {
         "China": 0,
         "Peru": 20,
-        "Vietnam": 110,
-        "Switzerland": 135,
-        "Malaysia": 170,
-        "Thailand": 200,
-        "Nepal": 230,
-        "Japan": 270,
+        "Vietnam": 120,
+        "Switzerland": 145,
+        "Malaysia": 165,
+        "Thailand": 185,
+        "Nepal": 210,
+        "Japan": 260,
         "Canada": 295,
-        "Tanzania": 312,
+        "Tanzania": 315,
         "Zimbabwe": 335
     }
 };
 
+function showMainImage() {
+    document.getElementById('main-image').classList.remove('hidden');
+    document.getElementById('cover-image').classList.add('hidden');
+}
+
 // Function to handle the first selection (manual selection)
 function showArrow(sectionId) {
     selectedSection = sectionId; // Store the selected section
-
     // Hide the main image and show the spinning arrow section
     document.getElementById("main-image").classList.add("hidden");
     document.getElementById("arrow-container").classList.remove("hidden");
